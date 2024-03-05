@@ -1,0 +1,2056 @@
+{
+    "93": {
+        "name": "CentralWidget",
+        "path": "qSlicerMainWindow/CentralWidget",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            1197,
+            882
+        ]
+    },
+    "94": {
+        "name": "CentralWidgetLayoutFrame",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            1197,
+            882
+        ]
+    },
+    "103": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            1197,
+            882
+        ]
+    },
+    "104": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0",
+        "text": "None",
+        "position": [
+            1472,
+            108
+        ],
+        "size": [
+            447,
+            882
+        ]
+    },
+    "106": {
+        "name": "qMRMLSliceWidgetRed",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed",
+        "text": "None",
+        "position": [
+            1472,
+            108
+        ],
+        "size": [
+            447,
+            293
+        ]
+    },
+    "109": {
+        "name": "SliceController",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController",
+        "text": "None",
+        "position": [
+            1472,
+            108
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "111": {
+        "name": "BarWidget",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget",
+        "text": "None",
+        "position": [
+            1472,
+            108
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "113": {
+        "name": "PinButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/PinButton",
+        "text": "",
+        "position": [
+            1472,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "114": {
+        "name": "ViewLabel",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/ViewLabel",
+        "text": "R",
+        "position": [
+            1506,
+            108
+        ],
+        "size": [
+            12,
+            30
+        ]
+    },
+    "115": {
+        "name": "MaximizeViewButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/MaximizeViewButton",
+        "text": "",
+        "position": [
+            1555,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "116": {
+        "name": "FitToWindowToolButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/FitToWindowToolButton",
+        "text": "Fit to window",
+        "position": [
+            1521,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "118": {
+        "name": "SliceOffsetSlider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider",
+        "text": "None",
+        "position": [
+            1594,
+            108
+        ],
+        "size": [
+            325,
+            30
+        ]
+    },
+    "120": {
+        "name": "Slider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider/Slider",
+        "text": "None",
+        "position": [
+            1594,
+            116
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "121": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider/Slider/QSlider:0",
+        "text": "None",
+        "position": [
+            1594,
+            116
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "123": {
+        "name": "SpinBox",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider/SpinBox",
+        "text": "None",
+        "position": [
+            1827,
+            108
+        ],
+        "size": [
+            92,
+            30
+        ]
+    },
+    "124": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0",
+        "text": "S: 0.4690mm",
+        "position": [
+            1827,
+            112
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "126": {
+        "name": "qt_spinbox_lineedit",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0/qt_spinbox_lineedit",
+        "text": "S: 0.4690mm",
+        "position": [
+            1827,
+            112
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "507": {
+        "name": "frame",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/frame",
+        "text": "None",
+        "position": [
+            1472,
+            139
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "509": {
+        "name": "SliceView",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/frame/SliceView",
+        "text": "None",
+        "position": [
+            1472,
+            139
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "512": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetRed/frame/SliceView/ctkVTKOpenGLNativeWidget:0",
+        "text": "None",
+        "position": [
+            1472,
+            139
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "530": {
+        "name": "qMRMLSliceWidgetGreen",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen",
+        "text": "None",
+        "position": [
+            1472,
+            403
+        ],
+        "size": [
+            447,
+            292
+        ]
+    },
+    "533": {
+        "name": "SliceController",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController",
+        "text": "None",
+        "position": [
+            1472,
+            403
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "535": {
+        "name": "BarWidget",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget",
+        "text": "None",
+        "position": [
+            1472,
+            403
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "537": {
+        "name": "PinButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/PinButton",
+        "text": "",
+        "position": [
+            1472,
+            403
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "538": {
+        "name": "ViewLabel",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/ViewLabel",
+        "text": "G",
+        "position": [
+            1506,
+            403
+        ],
+        "size": [
+            12,
+            30
+        ]
+    },
+    "539": {
+        "name": "MaximizeViewButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/MaximizeViewButton",
+        "text": "",
+        "position": [
+            1555,
+            403
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "540": {
+        "name": "FitToWindowToolButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/FitToWindowToolButton",
+        "text": "Fit to window",
+        "position": [
+            1521,
+            403
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "542": {
+        "name": "SliceOffsetSlider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider",
+        "text": "None",
+        "position": [
+            1594,
+            403
+        ],
+        "size": [
+            325,
+            30
+        ]
+    },
+    "544": {
+        "name": "Slider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider/Slider",
+        "text": "None",
+        "position": [
+            1594,
+            411
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "545": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider/Slider/QSlider:0",
+        "text": "None",
+        "position": [
+            1594,
+            411
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "547": {
+        "name": "SpinBox",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider/SpinBox",
+        "text": "None",
+        "position": [
+            1827,
+            403
+        ],
+        "size": [
+            92,
+            30
+        ]
+    },
+    "548": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0",
+        "text": "A: -0.7500mm",
+        "position": [
+            1827,
+            407
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "550": {
+        "name": "qt_spinbox_lineedit",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0/qt_spinbox_lineedit",
+        "text": "A: -0.7500mm",
+        "position": [
+            1827,
+            407
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "931": {
+        "name": "frame",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/frame",
+        "text": "None",
+        "position": [
+            1472,
+            434
+        ],
+        "size": [
+            447,
+            261
+        ]
+    },
+    "933": {
+        "name": "SliceView",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/frame/SliceView",
+        "text": "None",
+        "position": [
+            1472,
+            434
+        ],
+        "size": [
+            447,
+            261
+        ]
+    },
+    "936": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetGreen/frame/SliceView/ctkVTKOpenGLNativeWidget:0",
+        "text": "None",
+        "position": [
+            1472,
+            434
+        ],
+        "size": [
+            447,
+            261
+        ]
+    },
+    "954": {
+        "name": "qMRMLSliceWidgetYellow",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow",
+        "text": "None",
+        "position": [
+            1472,
+            697
+        ],
+        "size": [
+            447,
+            293
+        ]
+    },
+    "957": {
+        "name": "SliceController",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController",
+        "text": "None",
+        "position": [
+            1472,
+            697
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "959": {
+        "name": "BarWidget",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget",
+        "text": "None",
+        "position": [
+            1472,
+            697
+        ],
+        "size": [
+            447,
+            30
+        ]
+    },
+    "961": {
+        "name": "PinButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/PinButton",
+        "text": "",
+        "position": [
+            1472,
+            697
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "962": {
+        "name": "ViewLabel",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/ViewLabel",
+        "text": "Y",
+        "position": [
+            1506,
+            697
+        ],
+        "size": [
+            12,
+            30
+        ]
+    },
+    "963": {
+        "name": "MaximizeViewButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/MaximizeViewButton",
+        "text": "",
+        "position": [
+            1555,
+            697
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "964": {
+        "name": "FitToWindowToolButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/FitToWindowToolButton",
+        "text": "Fit to window",
+        "position": [
+            1521,
+            697
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "966": {
+        "name": "SliceOffsetSlider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider",
+        "text": "None",
+        "position": [
+            1594,
+            697
+        ],
+        "size": [
+            325,
+            30
+        ]
+    },
+    "968": {
+        "name": "Slider",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider/Slider",
+        "text": "None",
+        "position": [
+            1594,
+            705
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "969": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider/Slider/QSlider:0",
+        "text": "None",
+        "position": [
+            1594,
+            705
+        ],
+        "size": [
+            229,
+            14
+        ]
+    },
+    "971": {
+        "name": "SpinBox",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider/SpinBox",
+        "text": "None",
+        "position": [
+            1827,
+            697
+        ],
+        "size": [
+            92,
+            30
+        ]
+    },
+    "972": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0",
+        "text": "R: 0.4685mm",
+        "position": [
+            1827,
+            701
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "974": {
+        "name": "qt_spinbox_lineedit",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/SliceController/BarWidget/SliceOffsetSlider/SpinBox/ctkQDoubleSpinBox:0/qt_spinbox_lineedit",
+        "text": "R: 0.4685mm",
+        "position": [
+            1827,
+            701
+        ],
+        "size": [
+            92,
+            21
+        ]
+    },
+    "1355": {
+        "name": "frame",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/frame",
+        "text": "None",
+        "position": [
+            1472,
+            728
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "1357": {
+        "name": "SliceView",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/frame/SliceView",
+        "text": "None",
+        "position": [
+            1472,
+            728
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "1360": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/QWidget:0/qMRMLSliceWidgetYellow/frame/SliceView/ctkVTKOpenGLNativeWidget:0",
+        "text": "None",
+        "position": [
+            1472,
+            728
+        ],
+        "size": [
+            447,
+            262
+        ]
+    },
+    "1378": {
+        "name": "ThreeDWidget1",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            745,
+            882
+        ]
+    },
+    "1380": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            745,
+            30
+        ]
+    },
+    "1382": {
+        "name": "BarWidget",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/BarWidget",
+        "text": "None",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            745,
+            30
+        ]
+    },
+    "1384": {
+        "name": "PinButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/BarWidget/PinButton",
+        "text": "",
+        "position": [
+            722,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1385": {
+        "name": "ViewLabel",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/BarWidget/ViewLabel",
+        "text": "1",
+        "position": [
+            756,
+            108
+        ],
+        "size": [
+            12,
+            30
+        ]
+    },
+    "1386": {
+        "name": "MaximizeViewButton",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/BarWidget/MaximizeViewButton",
+        "text": "",
+        "position": [
+            805,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1387": {
+        "name": "CenterButton_Header",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/BarWidget/CenterButton_Header",
+        "text": "Center",
+        "position": [
+            771,
+            108
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1463": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDView:0",
+        "text": "None",
+        "position": [
+            722,
+            139
+        ],
+        "size": [
+            745,
+            851
+        ]
+    },
+    "1466": {
+        "name": "",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/ThreeDWidget1/qMRMLThreeDView:0/ctkVTKOpenGLNativeWidget:0",
+        "text": "None",
+        "position": [
+            722,
+            139
+        ],
+        "size": [
+            745,
+            851
+        ]
+    },
+    "1472": {
+        "name": "qt_splithandle_",
+        "path": "qSlicerMainWindow/CentralWidget/CentralWidgetLayoutFrame/QSplitter:0/qt_splithandle_",
+        "text": "None",
+        "position": [
+            1468,
+            108
+        ],
+        "size": [
+            3,
+            882
+        ]
+    },
+    "1476": {
+        "name": "StatusBar",
+        "path": "qSlicerMainWindow/StatusBar",
+        "text": "None",
+        "position": [
+            0,
+            991
+        ],
+        "size": [
+            1919,
+            35
+        ]
+    },
+    "1478": {
+        "name": "",
+        "path": "qSlicerMainWindow/StatusBar/QToolButton:0",
+        "text": "Error Log",
+        "position": [
+            1887,
+            994
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1482": {
+        "name": "PanelDockWidget",
+        "path": "qSlicerMainWindow/PanelDockWidget",
+        "text": "None",
+        "position": [
+            0,
+            108
+        ],
+        "size": [
+            715,
+            882
+        ]
+    },
+    "1487": {
+        "name": "dockWidgetContents",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents",
+        "text": "None",
+        "position": [
+            0,
+            145
+        ],
+        "size": [
+            715,
+            845
+        ]
+    },
+    "1489": {
+        "name": "ModulePanel",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel",
+        "text": "None",
+        "position": [
+            0,
+            147
+        ],
+        "size": [
+            715,
+            710
+        ]
+    },
+    "1491": {
+        "name": "ScrollArea",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea",
+        "text": "None",
+        "position": [
+            0,
+            147
+        ],
+        "size": [
+            715,
+            710
+        ]
+    },
+    "1492": {
+        "name": "qt_scrollarea_viewport",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport",
+        "text": "None",
+        "position": [
+            0,
+            147
+        ],
+        "size": [
+            715,
+            710
+        ]
+    },
+    "1493": {
+        "name": "scrollAreaWidgetContents",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents",
+        "text": "None",
+        "position": [
+            0,
+            147
+        ],
+        "size": [
+            715,
+            710
+        ]
+    },
+    "1495": {
+        "name": "HelpCollapsibleButton",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/HelpCollapsibleButton",
+        "text": "Help && Acknowledgement",
+        "position": [
+            0,
+            147
+        ],
+        "size": [
+            715,
+            35
+        ]
+    },
+    "1533": {
+        "name": "TutorialMakerModuleWidget",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget",
+        "text": "None",
+        "position": [
+            0,
+            186
+        ],
+        "size": [
+            715,
+            671
+        ]
+    },
+    "1535": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0",
+        "text": "Reload && Test",
+        "position": [
+            0,
+            186
+        ],
+        "size": [
+            715,
+            334
+        ]
+    },
+    "1539": {
+        "name": "ScriptedLoadableModuleTemplate Reload",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0/ScriptedLoadableModuleTemplate Reload",
+        "text": "Reload",
+        "position": [
+            4,
+            212
+        ],
+        "size": [
+            233,
+            21
+        ]
+    },
+    "1541": {
+        "name": "ScriptedLoadableModuleTemplate Testing",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0/ScriptedLoadableModuleTemplate Testing",
+        "text": "Reload and Test",
+        "position": [
+            241,
+            212
+        ],
+        "size": [
+            233,
+            21
+        ]
+    },
+    "1542": {
+        "name": "ScriptedLoadableModuleTemplate Restart",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0/ScriptedLoadableModuleTemplate Restart",
+        "text": "Restart Slicer",
+        "position": [
+            478,
+            212
+        ],
+        "size": [
+            233,
+            21
+        ]
+    },
+    "1544": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0/QPushButton:2",
+        "text": "Edit",
+        "position": [
+            4,
+            237
+        ],
+        "size": [
+            352,
+            21
+        ]
+    },
+    "1546": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/ctkCollapsibleButton:0/QPushButton:3",
+        "text": "Edit UI",
+        "position": [
+            360,
+            237
+        ],
+        "size": [
+            351,
+            21
+        ]
+    },
+    "1548": {
+        "name": "TutorialMaker",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker",
+        "text": "None",
+        "position": [
+            0,
+            524
+        ],
+        "size": [
+            715,
+            333
+        ]
+    },
+    "1551": {
+        "name": "CollapsibleButtonTutorialMaking",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker/CollapsibleButtonTutorialMaking",
+        "text": "Tutorial Making",
+        "position": [
+            6,
+            530
+        ],
+        "size": [
+            703,
+            35
+        ]
+    },
+    "1561": {
+        "name": "listWidgetTutorials",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker/listWidgetTutorials",
+        "text": "None",
+        "position": [
+            6,
+            569
+        ],
+        "size": [
+            703,
+            191
+        ]
+    },
+    "1562": {
+        "name": "qt_scrollarea_viewport",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker/listWidgetTutorials/qt_scrollarea_viewport",
+        "text": "None",
+        "position": [
+            7,
+            570
+        ],
+        "size": [
+            701,
+            189
+        ]
+    },
+    "1573": {
+        "name": "pushButtonAnnotate",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker/pushButtonAnnotate",
+        "text": "Run and Annotate",
+        "position": [
+            6,
+            764
+        ],
+        "size": [
+            703,
+            21
+        ]
+    },
+    "1575": {
+        "name": "pushButtonTestPainter",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/TutorialMakerModuleWidget/TutorialMaker/pushButtonTestPainter",
+        "text": "Test Translation",
+        "position": [
+            6,
+            789
+        ],
+        "size": [
+            703,
+            21
+        ]
+    },
+    "1583": {
+        "name": "DataProbeCollapsibleWidget",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget",
+        "text": "Data Probe",
+        "position": [
+            0,
+            860
+        ],
+        "size": [
+            715,
+            130
+        ]
+    },
+    "1585": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0",
+        "text": "None",
+        "position": [
+            4,
+            886
+        ],
+        "size": [
+            707,
+            100
+        ]
+    },
+    "1589": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:0",
+        "text": "None",
+        "position": [
+            10,
+            892
+        ],
+        "size": [
+            695,
+            25
+        ]
+    },
+    "1591": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:0/QCheckBox:0",
+        "text": "Show Zoomed Slice",
+        "position": [
+            10,
+            895
+        ],
+        "size": [
+            695,
+            19
+        ]
+    },
+    "1598": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2",
+        "text": "None",
+        "position": [
+            10,
+            921
+        ],
+        "size": [
+            695,
+            59
+        ]
+    },
+    "1600": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:0",
+        "text": "L",
+        "position": [
+            16,
+            927
+        ],
+        "size": [
+            6,
+            13
+        ]
+    },
+    "1601": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:1",
+        "text": "",
+        "position": [
+            26,
+            927
+        ],
+        "size": [
+            -1,
+            13
+        ]
+    },
+    "1602": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:2",
+        "text": "",
+        "position": [
+            29,
+            927
+        ],
+        "size": [
+            4,
+            13
+        ]
+    },
+    "1603": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:3",
+        "text": "",
+        "position": [
+            37,
+            927
+        ],
+        "size": [
+            662,
+            13
+        ]
+    },
+    "1604": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:4",
+        "text": "F",
+        "position": [
+            16,
+            944
+        ],
+        "size": [
+            6,
+            13
+        ]
+    },
+    "1605": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:5",
+        "text": "",
+        "position": [
+            26,
+            944
+        ],
+        "size": [
+            -1,
+            13
+        ]
+    },
+    "1606": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:6",
+        "text": "",
+        "position": [
+            29,
+            944
+        ],
+        "size": [
+            4,
+            13
+        ]
+    },
+    "1607": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:7",
+        "text": "",
+        "position": [
+            37,
+            944
+        ],
+        "size": [
+            662,
+            13
+        ]
+    },
+    "1608": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:8",
+        "text": "B",
+        "position": [
+            16,
+            961
+        ],
+        "size": [
+            6,
+            13
+        ]
+    },
+    "1609": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:9",
+        "text": "",
+        "position": [
+            26,
+            961
+        ],
+        "size": [
+            -1,
+            13
+        ]
+    },
+    "1610": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:10",
+        "text": "",
+        "position": [
+            29,
+            961
+        ],
+        "size": [
+            4,
+            13
+        ]
+    },
+    "1611": {
+        "name": "",
+        "path": "qSlicerMainWindow/PanelDockWidget/dockWidgetContents/DataProbeCollapsibleWidget/QFrame:0/QFrame:2/QLabel:11",
+        "text": "",
+        "position": [
+            37,
+            961
+        ],
+        "size": [
+            662,
+            13
+        ]
+    },
+    "1615": {
+        "name": "LogoLabel",
+        "path": "qSlicerMainWindow/PanelDockWidget/LogoLabel",
+        "text": "",
+        "position": [
+            0,
+            108
+        ],
+        "size": [
+            715,
+            36
+        ]
+    },
+    "1618": {
+        "name": "MainToolBar",
+        "path": "qSlicerMainWindow/MainToolBar",
+        "text": "None",
+        "position": [
+            0,
+            19
+        ],
+        "size": [
+            114,
+            38
+        ]
+    },
+    "1622": {
+        "name": "",
+        "path": "qSlicerMainWindow/MainToolBar/QToolButton:0",
+        "text": "Load Data",
+        "position": [
+            13,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1623": {
+        "name": "",
+        "path": "qSlicerMainWindow/MainToolBar/QToolButton:1",
+        "text": "Load DICOM",
+        "position": [
+            46,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1624": {
+        "name": "",
+        "path": "qSlicerMainWindow/MainToolBar/QToolButton:2",
+        "text": "Save Data",
+        "position": [
+            79,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1627": {
+        "name": "ModuleSelectorToolBar",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar",
+        "text": "None",
+        "position": [
+            115,
+            19
+        ],
+        "size": [
+            363,
+            38
+        ]
+    },
+    "1632": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/QLabel:0",
+        "text": "Modules:",
+        "position": [
+            128,
+            23
+        ],
+        "size": [
+            43,
+            30
+        ]
+    },
+    "1671": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/QToolButton:0",
+        "text": "Module Finder",
+        "position": [
+            173,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1673": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/ctkMenuComboBox:0",
+        "text": "None",
+        "position": [
+            206,
+            26
+        ],
+        "size": [
+            169,
+            23
+        ]
+    },
+    "1677": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/ctkMenuComboBox:0/ctkMenuComboBoxInternal:0",
+        "text": "None",
+        "position": [
+            206,
+            26
+        ],
+        "size": [
+            169,
+            23
+        ]
+    },
+    "1773": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/QToolButton:1",
+        "text": "History",
+        "position": [
+            377,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1777": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/QToolButton:2",
+        "text": "Previous",
+        "position": [
+            410,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1781": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleSelectorToolBar/QToolButton:3",
+        "text": "Next",
+        "position": [
+            443,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1784": {
+        "name": "ModuleToolBar",
+        "path": "qSlicerMainWindow/ModuleToolBar",
+        "text": "None",
+        "position": [
+            479,
+            19
+        ],
+        "size": [
+            246,
+            38
+        ]
+    },
+    "1788": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:0",
+        "text": "Volumes",
+        "position": [
+            558,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1790": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:1",
+        "text": "Data",
+        "position": [
+            525,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1792": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:2",
+        "text": "Markups",
+        "position": [
+            657,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1794": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:3",
+        "text": "MONAI Auto3DSeg",
+        "position": [
+            492,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1796": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:4",
+        "text": "Models",
+        "position": [
+            591,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1798": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:5",
+        "text": "Segment Editor",
+        "position": [
+            690,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1800": {
+        "name": "",
+        "path": "qSlicerMainWindow/ModuleToolBar/QToolButton:6",
+        "text": "Transforms",
+        "position": [
+            624,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1804": {
+        "name": "ViewToolBar",
+        "path": "qSlicerMainWindow/ViewToolBar",
+        "text": "None",
+        "position": [
+            726,
+            19
+        ],
+        "size": [
+            48,
+            38
+        ]
+    },
+    "1809": {
+        "name": "",
+        "path": "qSlicerMainWindow/ViewToolBar/QToolButton:0",
+        "text": "Conventional Widescreen",
+        "position": [
+            739,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1812": {
+        "name": "MouseModeToolBar",
+        "path": "qSlicerMainWindow/MouseModeToolBar",
+        "text": "None",
+        "position": [
+            775,
+            19
+        ],
+        "size": [
+            126,
+            38
+        ]
+    },
+    "1817": {
+        "name": "",
+        "path": "qSlicerMainWindow/MouseModeToolBar/QToolButton:0",
+        "text": "View",
+        "position": [
+            788,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1825": {
+        "name": "",
+        "path": "qSlicerMainWindow/MouseModeToolBar/QToolButton:1",
+        "text": "Window/level",
+        "position": [
+            821,
+            23
+        ],
+        "size": [
+            43,
+            30
+        ]
+    },
+    "1829": {
+        "name": "",
+        "path": "qSlicerMainWindow/MouseModeToolBar/QToolButton:3",
+        "text": "Toggle Markups Toolbar",
+        "position": [
+            866,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1832": {
+        "name": "CaptureToolBar",
+        "path": "qSlicerMainWindow/CaptureToolBar",
+        "text": "None",
+        "position": [
+            902,
+            19
+        ],
+        "size": [
+            114,
+            38
+        ]
+    },
+    "1837": {
+        "name": "",
+        "path": "qSlicerMainWindow/CaptureToolBar/QToolButton:0",
+        "text": "Screenshot",
+        "position": [
+            915,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1839": {
+        "name": "",
+        "path": "qSlicerMainWindow/CaptureToolBar/QToolButton:1",
+        "text": "Scene view",
+        "position": [
+            948,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1841": {
+        "name": "",
+        "path": "qSlicerMainWindow/CaptureToolBar/QToolButton:2",
+        "text": "Restore view",
+        "position": [
+            981,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1863": {
+        "name": "ViewersToolBar",
+        "path": "qSlicerMainWindow/ViewersToolBar",
+        "text": "None",
+        "position": [
+            1017,
+            19
+        ],
+        "size": [
+            105,
+            38
+        ]
+    },
+    "1890": {
+        "name": "",
+        "path": "qSlicerMainWindow/ViewersToolBar/QToolButton:0",
+        "text": "Crosshair",
+        "position": [
+            1030,
+            23
+        ],
+        "size": [
+            43,
+            30
+        ]
+    },
+    "1909": {
+        "name": "",
+        "path": "qSlicerMainWindow/ViewersToolBar/QToolButton:1",
+        "text": "Slice intersections",
+        "position": [
+            1075,
+            23
+        ],
+        "size": [
+            43,
+            30
+        ]
+    },
+    "1912": {
+        "name": "DialogToolBar",
+        "path": "qSlicerMainWindow/DialogToolBar",
+        "text": "None",
+        "position": [
+            1123,
+            19
+        ],
+        "size": [
+            796,
+            38
+        ]
+    },
+    "1916": {
+        "name": "",
+        "path": "qSlicerMainWindow/DialogToolBar/QToolButton:0",
+        "text": "Extensions Manager",
+        "position": [
+            1136,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1917": {
+        "name": "",
+        "path": "qSlicerMainWindow/DialogToolBar/QToolButton:1",
+        "text": "Python Console",
+        "position": [
+            1169,
+            23
+        ],
+        "size": [
+            31,
+            30
+        ]
+    },
+    "1920": {
+        "name": "menubar",
+        "path": "qSlicerMainWindow/menubar",
+        "text": "None",
+        "position": [
+            0,
+            0
+        ],
+        "size": [
+            1919,
+            18
+        ]
+    },
+    "2102": {
+        "name": "SequenceBrowserToolBar",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar",
+        "text": "None",
+        "position": [
+            0,
+            58
+        ],
+        "size": [
+            1919,
+            49
+        ]
+    },
+    "2107": {
+        "name": "qMRMLSequenceBrowserPlayWidget",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget",
+        "text": "None",
+        "position": [
+            13,
+            62
+        ],
+        "size": [
+            399,
+            41
+        ]
+    },
+    "2109": {
+        "name": "pushButton_VcrFirst",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrFirst",
+        "text": "",
+        "position": [
+            19,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2110": {
+        "name": "pushButton_VcrPrevious",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrPrevious",
+        "text": "",
+        "position": [
+            58,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2111": {
+        "name": "pushButton_VcrPlayPause",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrPlayPause",
+        "text": "",
+        "position": [
+            97,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2112": {
+        "name": "pushButton_VcrNext",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrNext",
+        "text": "",
+        "position": [
+            136,
+            68
+        ],
+        "size": [
+            36,
+            29
+        ]
+    },
+    "2113": {
+        "name": "pushButton_VcrLast",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrLast",
+        "text": "",
+        "position": [
+            176,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2114": {
+        "name": "doubleSpinBox_VcrPlaybackRate",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/doubleSpinBox_VcrPlaybackRate",
+        "text": "100.0fps",
+        "position": [
+            215,
+            71
+        ],
+        "size": [
+            74,
+            22
+        ]
+    },
+    "2115": {
+        "name": "qt_spinbox_lineedit",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/doubleSpinBox_VcrPlaybackRate/qt_spinbox_lineedit",
+        "text": "100.0fps",
+        "position": [
+            218,
+            74
+        ],
+        "size": [
+            54,
+            16
+        ]
+    },
+    "2118": {
+        "name": "pushButton_VcrLoop",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrLoop",
+        "text": "",
+        "position": [
+            293,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2119": {
+        "name": "pushButton_VcrRecord",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_VcrRecord",
+        "text": "",
+        "position": [
+            332,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2120": {
+        "name": "pushButton_Snapshot",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserPlayWidget/pushButton_Snapshot",
+        "text": "",
+        "position": [
+            371,
+            68
+        ],
+        "size": [
+            35,
+            29
+        ]
+    },
+    "2125": {
+        "name": "qMRMLSequenceBrowserSeekWidget",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserSeekWidget",
+        "text": "None",
+        "position": [
+            414,
+            69
+        ],
+        "size": [
+            349,
+            26
+        ]
+    },
+    "2128": {
+        "name": "label_IndexName",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserSeekWidget/label_IndexName",
+        "text": "",
+        "position": [
+            420,
+            75
+        ],
+        "size": [
+            -1,
+            14
+        ]
+    },
+    "2129": {
+        "name": "slider_IndexValue",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserSeekWidget/slider_IndexValue",
+        "text": "None",
+        "position": [
+            423,
+            75
+        ],
+        "size": [
+            328,
+            14
+        ]
+    },
+    "2130": {
+        "name": "label_IndexValue",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserSeekWidget/label_IndexValue",
+        "text": "",
+        "position": [
+            755,
+            75
+        ],
+        "size": [
+            -1,
+            14
+        ]
+    },
+    "2131": {
+        "name": "label_IndexUnit",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLSequenceBrowserSeekWidget/label_IndexUnit",
+        "text": "",
+        "position": [
+            758,
+            75
+        ],
+        "size": [
+            -1,
+            14
+        ]
+    },
+    "2133": {
+        "name": "",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLNodeComboBox:0",
+        "text": "None",
+        "position": [
+            765,
+            72
+        ],
+        "size": [
+            349,
+            21
+        ]
+    },
+    "2136": {
+        "name": "",
+        "path": "qSlicerMainWindow/SequenceBrowserToolBar/qMRMLNodeComboBox:0/ctkComboBox:0",
+        "text": "None",
+        "position": [
+            765,
+            72
+        ],
+        "size": [
+            349,
+            21
+        ]
+    }
+}
