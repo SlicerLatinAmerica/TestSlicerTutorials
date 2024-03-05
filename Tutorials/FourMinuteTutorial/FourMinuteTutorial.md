@@ -4,6 +4,8 @@ Authors:
 - Sonia Pujol, Ph.D., Surgical Planning Laboratory, Harvard Medical School
 - Andras Lasso, Ph.D., PerkLab, Queen's University
 
+Created from https://www.slicer.org/w/img_auth.php/a/ae/Slicer4minute-tutorial_SoniaPujol-mj.pdf
+
 Description: This tutorial is a 4-minute introduction to the 3D visualization
 capabilities of the Slicer4 software for medical image analysis.
 
@@ -29,9 +31,12 @@ A Slicer scene is a MRML file which, contains the list of elements loaded into S
 
 Select File -> Load Scene from the main menu, and load `slicer4minute.mrml`.
 
-<!-- Annotations are stored in the image caption. Note that the same image can be reused multiple times, with different annotations in the same tutorial. -->
+<!--
+Annotations are stored in the image caption. Note that the same image can be reused multiple times, with different annotations in the same tutorial.
+Also note standard Python syntax is used (dict objects in a tuple), which is flexible, relatively compact, and very easy to parse in Python.
+-->
 
-![Screenshot:{click:menu/File}](Screenshots/en-US/001-part1-startup.png)
+![Screenshot:({"annotation":"click","widget":"menu/File"})](Screenshots/en-US/001-part1-startup.png)
 
 Slicer displays the elements of the slicer4minute scene, which contains the MR volume of
 the brain and a series of 3D surface models.
@@ -40,7 +45,11 @@ the brain and a series of 3D surface models.
 
 Select Conventional Widescreen from the viewing mode menu.
 
+![Screenshot({"annotation":"click","widget":"toolbar/layouts","label":"1"},{"annotation":"click","widget":"toolbar/layouts/conventional","label":"2"})](Screenshots/en-US/002-part1-after-scene-load.png)
+
 Select Models from the Modules menu.
+
+![Screenshot:({"annotation":"arrow","widget":"toolbar/ModuleSelector","direction":"up","label":"1"}](Screenshots/en-US/002-part1-after-scene-load.png)
 
 The Models module GUI displays the list of models loaded in the slicer4minute scene, their color and the value of their opacity (between 0.0 an 1.0).
 
@@ -59,7 +68,7 @@ Position the mouse in the 3D viewer.
 
 ### Anatomical Views
 
-Click on the pin icons in the top left corners of the red and green viewers to display the viewers’ menu, and click on the eye icon to display the axial and coronal slice in
+Click on the pin icons in the top left corners of the red and green viewers to display the viewers' menu, and click on the eye icon to display the axial and coronal slice in
 the 3D viewer.
 
 Turn off the visibility of the skull bone to display the hemispheric white matter model.
