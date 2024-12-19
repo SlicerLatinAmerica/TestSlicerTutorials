@@ -1,5 +1,4 @@
 import os
-import shutil
 import slicer
 import zipfile
 import SampleData
@@ -72,8 +71,10 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
         self.delayDisplay("Screenshot #1: In the Welcome screen.")
 
         # 2 shot:
+        print("Downloading zip file...")
         self.downloadAndLoadZip()
         self.mainWindow.moduleSelector().selectModule("DICOM")
+        print("Zip file was downloaded.")
 
         self.Tutorial.nextScreenshot()
         self.delayDisplay("Screenshot #2: Loaded the sample dataset.")
@@ -86,7 +87,8 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
             "CentralWidget/CentralWidgetLayoutFrame/QWidget:0/SlicerDICOMBrowser/ActionButtonsFrame/QPushButton:2"
         )
 
-        scroll_area[4].click()
+        self.util.getNamedWidget("CentralWidget/CentralWidgetLayoutFrame/QWidget:0/SlicerDICOMBrowser/ctkDICOMBrowser/dicomTableManager/tableSplitter/patientsTable/tblDicomDatabaseView").inner().selectRow(0)
+
         load_button.click()
 
         self.Tutorial.nextScreenshot()
@@ -345,15 +347,17 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
 
         hemispheric_white_matter_display_node.SetClipping(True)
 
-        red_plane = self.util.getNamedWidget(
-            "PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ClippingButton/MRMLClipNodeWidget/RedSliceClippingCheckBox"
-        )
-        red_plane.click()
+        clip = slicer.util.getNode('ClipModelsParameters1')
 
-        green_plane = self.util.getNamedWidget(
-            "PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ClippingButton/MRMLClipNodeWidget/GreenSliceClippingCheckBox"
-        )
-        green_plane.click()
+        if int(slicer.app.revision) >= 33142: # Clipping API has changed around Slicer 5.7.0-2024-12-06
+            nodeID = "vtkMRMLSliceNodeGreen"
+            clip.AddAndObserveClippingNodeID(nodeID)
+            nodeIndex = clip.GetClippingNodeIndex(nodeID)
+            clip.SetNthClippingNodeState(nodeIndex, 2)
+        else:
+            clip.SetRedSliceClipState(0)
+            clip.SetYellowSliceClipState(0)
+            clip.SetGreenSliceClipState(2)
 
         self.Tutorial.nextScreenshot()
         self.delayDisplay(
@@ -379,23 +383,7 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
             "Screenshot #9: Final visualization with adjusted camera elevation (40°) and zoom level (0.8x)."
         )
 
-    def move_all_files(self, path1, path2):
-        os.makedirs(path2, exist_ok=True)
-
-        for file in os.listdir(path1):
-            source_file = os.path.join(path1, file)
-            destination_file = os.path.join(path2, file)
-
-            if os.path.exists(destination_file):
-                continue
-
-            shutil.move(source_file, path2)
-
     def downloadAndLoadZip(self):
-        print(f"slicer.app.temporaryPath = {slicer.app.temporaryPath}")
-        print(f"slicer.app.defaultScenePath = {slicer.app.defaultScenePath}")
-        print(f"slicer.dicomDatabase.databaseDirectory = {slicer.dicomDatabase.databaseDirectory}")
-
         zip_url = (
             "https://www.dropbox.com/s/03emcqnlec4t2s5/3DVisualizationDataset.zip?dl=1"
         )
@@ -408,5 +396,8 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
         with zipfile.ZipFile(zip_path, "r") as zip_ref:
             zip_ref.extractall(slicer.app.temporaryPath)
 
-        self.move_all_files(f"{slicer.app.temporaryPath}/{extraction_subfolder}", slicer.dicomDatabase.databaseDirectory)
-        
+        os.makedirs(slicer.dicomDatabase.databaseDirectory, exist_ok=True)
+
+        slicer.util.selectModule("DICOM")
+        from DICOMLib import DICOMUtils
+        DICOMUtils.importDicom(f"{slicer.app.temporaryPath}/{extraction_subfolder}")
