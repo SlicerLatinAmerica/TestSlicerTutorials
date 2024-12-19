@@ -341,13 +341,25 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
         )
 
         # 7 shot:
-        hemispheric_white_matter_display_node = slicer.util.getNode(
-            pattern="hemispheric_white_matter"
-        ).GetDisplayNode()
+        #Select the hemispheric white matter in the node list
+        nodeList = self.util.getNamedWidget("PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ResizableFrame/SubjectHierarchyTreeView").inner()
+        hemispheric_white_matter = slicer.util.getNode(pattern='hemispheric_white_matter')
+        nodeList.setCurrentNode(hemispheric_white_matter)
 
+        #Set Clipping
+        hemispheric_white_matter_display_node = hemispheric_white_matter.GetDisplayNode()
         hemispheric_white_matter_display_node.SetClipping(True)
-
+        
         clip = slicer.util.getNode('ClipModelsParameters1')
+        #We have to select the ClipModelsParameters1 in the combobox
+        self.util.getNamedWidget(
+            "PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ClippingButton/ClipModelsNodeComboBox"
+        ).inner().setCurrentNode(clip)
+        #We also have to select any of the unselected options on the clipping node nodes, this will force a refresh that will remove some bugged state from the clipping node
+        #This workaround shouldn't be necessary but for now it works
+        self.util.getNamedWidget(
+            "PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ClippingButton/MRMLClipNodeWidget/ClipNodeFrame/QWidget:0/PositiveRadioButton"
+        ).inner().click()
 
         if int(slicer.app.revision) >= 33142: # Clipping API has changed around Slicer 5.7.0-2024-12-06
             nodeID = "vtkMRMLSliceNodeGreen"
