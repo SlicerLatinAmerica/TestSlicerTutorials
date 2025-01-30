@@ -1,5 +1,6 @@
 # Reference Tutorial: https://www.youtube.com/watch?v=g9Vql5h6uHM
 import os
+import time
 import slicer
 import zipfile
 import SampleData
@@ -47,32 +48,15 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
         self.delayDisplay("Starting the test")
 
         # Running Tutorial
-        self.runPart01_InstallingExtention()
-        self.runPart02_LoadingData()
-        self.runPart03_BasicSegmentationFibulaMandible()
+        self.runPart01_LoadingData()
+        self.runPart02_BasicSegmentationFibulaMandible()
 
         # Done
         self.Tutorial.endTutorial()
         self.delayDisplay("Test passed!")
     
-    def runPart01_InstallingExtention(self):
-        # 1 shot: 
-        self.mainWindow.moduleSelector().selectModule('Welcome')
-        self.layoutManager.setLayout(slicer.vtkMRMLLayoutNode.SlicerLayoutConventionalView)
-        self.Tutorial.nextScreenshot()
-        self.delayDisplay('Screenshot #1: In the Welcome screen.')
-
-        # TODO: Screenshot is not properly taken in the extension manager environment
-
-        # 2 shot:
-        #extension_button = self.util.getNamedWidget("DialogToolBar/QToolButton:0").inner()
-        #extension_button.click()
-        #self.Tutorial.nextScreenshot()
-
-
-        # TODO: Search and install "BoneReconstructionPlanner" and "SegmentEditorExtraEffects" extensions
     
-    def runPart02_LoadingData(self):
+    def runPart01_LoadingData(self):
         # 1 shot: 
         self.mainWindow.moduleSelector().selectModule('Welcome')
         self.layoutManager.setLayout(slicer.vtkMRMLLayoutNode.SlicerLayoutConventionalView)
@@ -87,7 +71,7 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
         self.Tutorial.nextScreenshot()
         self.delayDisplay("Screenshot #2: Loaded the sample dataset.")
     
-    def runPart03_BasicSegmentationFibulaMandible(self):
+    def runPart02_BasicSegmentationFibulaMandible(self):
         # 1 shot: 
         self.mainWindow.moduleSelector().selectModule('SegmentEditor')
         self.Tutorial.nextScreenshot()
@@ -131,6 +115,8 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
         segmentation_display_node.SetVisibility(True)
         segmentation_display_node.SetVisibility2DFill(True)
 
+        time.sleep(1) #Necessary to wait 3d model to be loaded
+
         self.Tutorial.nextScreenshot()
         self.delayDisplay('Screenshot #5: Showing 3d model.')
 
@@ -143,13 +129,13 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
 
 
     
-    def runPart04_VirtualSurgicalPlanning(self):
+    def runPart03_VirtualSurgicalPlanning(self):
         pass
     
-    def runPart05_FibulaCuttingGuideGeneration(self):
+    def runPart04_FibulaCuttingGuideGeneration(self):
         pass
 
-    def runPart06_MandibularResectionGuideGeneration(self):
+    def runPart05_MandibularResectionGuideGeneration(self):
         pass
     
     def _load_url_content(self, file_url, file_name):
