@@ -64,9 +64,8 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
         self.delayDisplay('Screenshot #1: In the Welcome screen.')
 
         # 2 shot:
-        self._load_url_content("https://github.com/SlicerIGT/SlicerBoneReconstructionPlanner/releases/download/TestingData/CTFibula.nrrd", "CTFibula.nrrd")
         self._load_url_content("https://github.com/SlicerIGT/SlicerBoneReconstructionPlanner/releases/download/TestingData/CTMandible.nrrd", "CTMandible.nrrd")
-
+        self._load_url_content("https://github.com/SlicerIGT/SlicerBoneReconstructionPlanner/releases/download/TestingData/CTFibula.nrrd", "CTFibula.nrrd")
 
         self.Tutorial.nextScreenshot()
         self.delayDisplay("Screenshot #2: Loaded the sample dataset.")
@@ -121,11 +120,31 @@ class BoneReconstructionPlannerTutorialTest(ScriptedLoadableModuleTest):
         self.delayDisplay('Screenshot #5: Showing 3d model.')
 
         # 6 shot:
+        cam = slicer.util.getNode(pattern="vtkMRMLCameraNode1")
+        cam.GetCamera().Roll(90)
+        cam.GetCamera().Elevation(30)
+
+        self.Tutorial.nextScreenshot()
+        self.delayDisplay("Screenshot #6: Rotated view (60° azimuth, 30° elevation).")
+
+        # 7 shot:
         segment_editor_widget = slicer.modules.segmenteditor.widgetRepresentation().self()
         segment_editor_widget.editor.setActiveEffectByName("Islands")
 
         self.Tutorial.nextScreenshot()
-        self.delayDisplay('Screenshot #6: In the Islands options.')
+        self.delayDisplay('Screenshot #7: In the Islands options.')
+
+        # 8 shot:
+        keep_islands_button = self.util.getNamedWidget("PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/SegmentEditorModuleWidget/qMRMLSegmentEditorWidget/OptionsGroupBox/EffectsOptionsFrame/QFrame:7/QRadioButton:3")
+        keep_islands_button.click()
+
+        self.Tutorial.nextScreenshot()
+        self.delayDisplay('Screenshot #7: Mark \"Keep Selected Islands\" option.')
+
+        # 9 shot:
+
+        self.Tutorial.nextScreenshot()
+        self.delayDisplay('Screenshot #8: Select island to be kept.')
 
 
     
