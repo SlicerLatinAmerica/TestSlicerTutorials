@@ -1,8 +1,12 @@
+# Reference: https://github.com/SlicerIGT/SlicerBoneReconstructionPlanner
+
 import os
 import unittest
 import logging
 import vtk, qt, ctk, slicer, math
 import numpy as np
+import Lib.utils as utils
+
 from slicer.ScriptedLoadableModule import *
 from slicer.util import VTKObservationMixin
 from BRPLib.helperFunctions import *
@@ -27,20 +31,75 @@ class BoneReconstructionPlannerTest(ScriptedLoadableModuleTest):
   def runTest(self):
     """Run as few or as many tests as needed here.
     """
+    self.Tutorial = utils.Tutorial(
+        "Bone Reconstruction Planner Test Tutorial",
+        "Author",
+        "27/01/2025",
+        "Test tutorial for Bone Reconstruction Planner"
+    )
+
+    # Clear Output folder
+    self.Tutorial.clearTutorial()
+    self.Tutorial.beginTutorial()
+    self.delayDisplay("Starting the test")
+
     #slicer.util.mainWindow().enabled = False
+    # Shot 01:
     self.setUp()
+    slicer.util.selectModule("Welcome")
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #1: In the Welcome screen.")
+    
+    # Shot 02:
     self.section_EnterBRP()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #2: Entered Bone Reconstruction Planner module.")
+
+    # Shot 03:
     self.section_GetWidget()
     self.section_GetLogic()
+
     self.section_LoadSampleData()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #3: Loaded sample data.")
+
+    # Shot 04:
     self.section_MakeModels()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #4: Made models.")
+
+    # Shot 05:
     self.section_AddMandibularCurve()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #5: Added mandibular curve.")
+
+    # Shot 06:
     self.section_AddMandiblePlanes()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #6: Added mandible planes.")
+
+    # Shot 07:
     self.section_AddFibulaLineAndCenterIt()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #7: Added fibula line and centered it.")
+
+    # Shot 08:
     self.section_SimulateAndImproveMandibleReconstruction()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #8: Simulated and improved mandible reconstruction.")
+
+    # Shot 09:
     self.section_createMiterBoxesFromCorrespondingLine()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #9: Created miter boxes.")
+
+    # Shot 10:
     #self.section_prepareGuideBaseForFibulaGuide()
     self.section_createAndUpdateSawBoxesFromMandiblePlanes()
+    self.Tutorial.nextScreenshot()
+    self.delayDisplay("Screenshot #10: Created and updated saw boxes.")
+
+    self.Tutorial.endTutorial() # End the timer and save the report
     #slicer.util.mainWindow().enabled = True
 
   def section_EnterBRP(self):
