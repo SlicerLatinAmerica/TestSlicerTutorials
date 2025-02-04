@@ -1,14 +1,10 @@
 # Reference: https://github.com/SlicerIGT/SlicerBoneReconstructionPlanner
 
-import os
-import unittest
-import logging
-import vtk, qt, ctk, slicer, math
+import vtk, slicer
 import numpy as np
 import Lib.utils as utils
 
 from slicer.ScriptedLoadableModule import *
-from slicer.util import VTKObservationMixin
 from BRPLib.helperFunctions import *
 from BRPLib.guiWidgets import *
 
