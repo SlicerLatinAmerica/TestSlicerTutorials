@@ -222,6 +222,10 @@ class VisualizationTutorialTest(ScriptedLoadableModuleTest):
 
         roiNode = slicer.mrmlScene.GetFirstNodeByClass("vtkMRMLMarkupsROINode")
 
+        # If ROI node is None, create a new one
+        if roiNode is None:
+            roiNode = slicer.mrmlScene.AddNewNodeByClass("vtkMRMLMarkupsROINode")
+
         roiNode.SetXYZ(-66, 144, -225)
 
         roiNode.SetRadiusXYZ(30, 50, 60)
