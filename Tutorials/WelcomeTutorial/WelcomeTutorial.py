@@ -38,23 +38,22 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
             f"{SCROLL_AREA_PATH}/SampleDataModuleWidget/GeneralCollapsibleGroupBox"
         )
 
-        self.Tutorial = utils.Tutorial(
-            "Slicer	Welcome", "Sonia Pujol, Ph.D.", "28/08/2024", "description"
-        )
-
         util = utils.util()
         layoutManager = slicer.app.layoutManager()
         mainWindow = slicer.util.mainWindow()
 
-        # Clear Output folder
-        self.Tutorial.clearTutorial()
-        self.Tutorial.beginTutorial()
         self.delayDisplay("Starting the test")
+        # TUTORIALMAKER BEGIN
 
+        # TUTORIALMAKER INFO TITLE Slicer Welcome
+        # TUTORIALMAKER INFO AUTHOR Sonia Pujol, Ph.D.
+        # TUTORIALMAKER INFO DATE 28/08/2024
+        # TUTORIALMAKER INFO DESC This tutorial introduces new users to the Slicer Welcome module, demonstrating basic navigation, sample data loading, and slice view interaction.
+        
         # 1 shot:
         mainWindow.moduleSelector().selectModule("Welcome")
         layoutManager.setLayout(slicer.vtkMRMLLayoutNode.SlicerLayoutConventionalView)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay("Screenshot #1: In the Welcome screen.")
 
         # 2 shot:
@@ -62,7 +61,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
             f"{WELCOME_BUTTONS_PATH}/WelcomeAndAboutCollapsibleWidget"
         ).inner()
         about_button.click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             'Screenshot #2: In the Welcome screen after pressing the "About" button.'
         )
@@ -90,7 +89,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
         cam.GetCamera().Elevation(30)
         cam.GetCamera().Zoom(1.4)
 
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             "Screenshot #3: In the Welcome screen with downloaded example."
         )
@@ -100,7 +99,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
             f"{WELCOME_BUTTONS_PATH}/OtherUsefulHintsCollapsibleWidget"
         ).inner()
         documentation_and_tutorials_button.click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             'Screenshot #4: In the Welcome screen after pressing the "Documentation & Tutorials" button.'
         )
@@ -115,7 +114,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
             f"{WELCOME_BUTTONS_PATH}/ButtonsFrame/LoadSampleDataButton"
         ).inner()
         download_button.click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             'Screenshot #5: In the Sample Data screen after pressing the "Download Sample Data" button.'
         )
@@ -125,7 +124,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
             f"{SAMPLE_DATA_PATH}/MRHeadPushButton"
         ).inner()
         mrh_head_button.click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             'Screenshot #6: MRHead sample data loading after pressing the "MRHead" button.'
         )
@@ -147,7 +146,7 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
 
         pin_buttons["Red"].click()
         more_buttons["Red"].click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             "Screenshot #7: Red slice view with the pin and more options opened."
         )
@@ -174,19 +173,19 @@ class SlicerWelcomeTest(ScriptedLoadableModuleTest):
         cam.GetCamera().Elevation(30)
         cam.GetCamera().Zoom(1.4)
 
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             "Screenshot #8: Adjusting red, green, and yellow slice visibility with more options expanded."
         )
 
         # 9 shot:
         mainWindow.moduleSelector().selectModule("Welcome")
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay(
             "Screenshot #9: Returning to the Welcome screen with the final view."
         )
 
-        self.Tutorial.endTutorial()
 
         # Done
+        # TUTORIALMAKER END
         self.delayDisplay("Test passed!")
