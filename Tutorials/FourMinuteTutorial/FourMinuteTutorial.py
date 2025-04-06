@@ -29,24 +29,24 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
     def test_Slicer4Minute1(self):
         """ Tests parts of the Slicer4Minute tutorial.
         """
-        self.Tutorial = utils.Tutorial( "Slicer4 Minute",
-            "Sonia Pujol, Ph.D.",
-            "28/08/2024",
-            "This tutorial is a 4-minute introduction to the 3D visualization capabilities of the Slicer4 software for medical image analysis.")
         
         util = utils.util()
         layoutManager = slicer.app.layoutManager()
         mainWindow = slicer.util.mainWindow()  
         
-        #Clear Output folder
-        self.Tutorial.clearTutorial()
-        self.Tutorial.beginTutorial()
         self.delayDisplay("Starting the test")
+        # TUTORIALMAKER BEGIN
+
+        # TUTORIALMAKER INFO TITLE FourMinTutorial
+        # TUTORIALMAKER INFO AUTHOR Sonia Pujol, Ph.D.
+        # TUTORIALMAKER INFO DATE 28/08/2024
+        # TUTORIALMAKER INFO DESC This tutorial is a 4-minute introduction to the 3D visualization capabilities of the Slicer4 software for medical image analysis.
         
         # 1 shot: 
         mainWindow.moduleSelector().selectModule('Welcome')
         layoutManager.setLayout(slicer.vtkMRMLLayoutNode.SlicerLayoutConventionalView)
-        self.Tutorial.nextScreenshot()
+
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #1: In the Welcome screen.')
 
         # 2 shot:
@@ -65,7 +65,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
             pass
 
         mainWindow.moduleSelector().selectModule('Models')
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #2: In the Models screen with the sample data loaded.')
 
         # 3 shot:
@@ -75,13 +75,13 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         red = slicer.util.getNode(pattern="vtkMRMLSliceNode1")
         red.SetSliceVisible(1)
         redControl.show()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #3: With the red view panel opened.')
         redControl.hide()
         
         # 4 shot:
         red.SetSliceOffset(-57)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #4: With the red view slided to -57.')
 
         # 5 shot
@@ -89,7 +89,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         skin.GetDisplayNode().SetOpacity(0.5)
         nodeList = util.getNamedWidget("PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea/qt_scrollarea_viewport/scrollAreaWidgetContents/ModelsModuleWidget/ResizableFrame/SubjectHierarchyTreeView").inner()
         nodeList.setCurrentNode(skin)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #5: With the skin node selected and opacity lowered to 0,5.')
 
         # 6 shot
@@ -98,7 +98,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         cam.GetCamera().Azimuth(60)
         cam.GetCamera().Elevation(30)
         cam.GetCamera().Zoom(1.3)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #6: Change the visibility of skin to 0 and rotate de camera to show the top of the head.')
 
         # 7 shot
@@ -106,7 +106,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         green.SetSliceVisible(1)
         greenControl.show()
         yellowControl.show()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #7: Set the visibility of the green view, showing the two view panel.')
         greenControl.hide()
         yellowControl.hide()
@@ -115,7 +115,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         skull = slicer.util.getNode(pattern='skull_bone')
         skull.GetDisplayNode().SetVisibility(0)
         nodeList.setCurrentNode(skull)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #8: Change the visibility of skull_bone, also click in the skull_bone in the node list.')
 
         # 9 shot
@@ -135,13 +135,13 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
             clip.SetGreenSliceClipState(2)
         scrolBar = util.getNamedWidget("PanelDockWidget/dockWidgetContents/ModulePanel/ScrollArea").inner()
         scrolBar.verticalScrollBar().setValue(scrolBar.height)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #9: Select hemispheric_white_matter, click in the clipping and change the clip state of the node.')
 
         # 10 shot
         cam.GetCamera().Elevation(10)
         green.SetSliceOffset(-10)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #10: Rotate the camera to see the optical nerve.')
         
         # 11 shot
@@ -149,7 +149,7 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         skin.GetDisplayNode().SetOpacity(0.5)
         nodeList.setCurrentNode(skin)
         layoutManager.setLayout(slicer.vtkMRMLLayoutNode.SlicerLayoutOneUp3DView)
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #11: Change the layout to 3D View only.')
 
         # 12 shot
@@ -157,12 +157,12 @@ class Slicer4MinuteTest(ScriptedLoadableModuleTest):
         cam.GetCamera().Elevation(0)
         util.getNamedWidget("CentralWidget/CentralWidgetLayoutFrame/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/qMRMLThreeDViewControllerWidget").inner().show()
         slicer.util.findChildren(name="SpinButton")[0].click()
-        self.Tutorial.nextScreenshot()
+        # TUTORIALMAKER SCREENSHOT
         self.delayDisplay('Screenshot #11: Active the 3D view spin button.')
-        util.getNamedWidget("CentralWidget/CentralWidgetLayoutFrame/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/qMRMLThreeDViewControllerWidget").inner().hide()
+        #util.getNamedWidget("CentralWidget/CentralWidgetLayoutFrame/ThreeDWidget1/qMRMLThreeDViewControllerWidget:0/qMRMLThreeDViewControllerWidget").inner().hide()
 
-        self.Tutorial.endTutorial()
         self.delayDisplay('Optic chiasm should be visible. Front part of white matter should be clipped.')
         
         # Done
+        # TUTORIALMAKER END
         self.delayDisplay('Test passed!')
